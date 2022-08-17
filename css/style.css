@@ -372,3 +372,27 @@ p{
     text-transform: uppercase;
     font-family: "source sans pro", sans-serif;
 }
+
+/*==================== Download Now ====================*/
+.download-now img{
+    width: auto;
+}
+
+.available-on{
+    background-color: #1a1a1a;
+    margin-top: -8px;
+    position: relative;
+}
+.available-title{
+    padding-top: 75px;
+}
+.available-title h2{
+    color: #fff;
+    font-size: 30px;
+}
+.available-title p{
+    color: #d5d5d5;
+}
+.available-on-item{
+    
+}
