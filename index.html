@@ -35,7 +35,36 @@
 		<body>
 
 			<!--- header -->
-			<header class="header">
+			<header class="header" id="HOME">
+				<!-------- NavBar ------->
+				<nav class="navbar navbar-default navbar-fixed-top">
+					<div class="container">
+					  	<div class="navbar-header">
+							<button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#demowebsite" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">
+								<!----- small size logo ----->
+								<img src="images/" alt="logo">
+							</a>
+						</div>
+					 	<div class="collapse navbar-collapse" id="logo-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#HOME" class="nav-item">Home</a></li>
+								<li><a href="#ABOUT" class="nav-item">About</a></li>
+								<li><a href="#FEATURES" class="nav-item">Features</a></li>
+								<li><a href="#SCREENS" class="nav-item">Screens</a></li>
+								<li><a href="#DOWNLOAD" class="nav-item">Download Now</a></li>
+								<li><a href="#CONTACT" class="nav-item">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+
 				<div class="header-overlay">
 					<div class="container">
 						<div class="row">
@@ -70,7 +99,7 @@
 			</header>
 			
 			<!----------About us -------->
-			<section>
+			<section id="ABOUT">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
@@ -167,7 +196,7 @@
 				</div>
 			</section>
 			<!----------- Features -------------->	
-			<section class="features">
+			<section class="features" id="FEATURES">
 				<div class="continer">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
@@ -258,8 +287,8 @@
 					</div>
 				</div>
 			</section>
-			<!----------- Features -------------->	
-			<section class="screen">
+			<!----------- SCREENS -------------->	
+			<section class="screen" id="SCREENS">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
@@ -326,7 +355,7 @@
 				</div>
 			</section>	
 			<!----------- Download Now -------------->
-			<section class="download-now">
+			<section class="download-now" id="DOWNLOAD">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
@@ -351,7 +380,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="available-title">
-								<h2> Available Now</h2>
+								<h2> Available On</h2>
 								<p>Maecenas porta malesuada accumsan. Morbi euismod auctor porttitor. Donec non pharetra metus. Praesent dictum velit nec orci maximus pretium. Phasellus dignissim nisl a scelerisque feugiat.</p>
 							</div>
 						</div>
@@ -393,7 +422,7 @@
 				</div>
 			</section>
 			<!----------- Contact Us -------------->
-			<section class="contact-us">
+			<section class="contact-us" id="CONTACT">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
@@ -455,6 +484,8 @@
 			<!---- Bootstrap JS ----->
 			<script src="js/jquery.js"></script>
 			<script src="js/bootstrap.min.js"></script>
+
+			<script src="js/custom.js"></script>
 			
 		</body>
 		
