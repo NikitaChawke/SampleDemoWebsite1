@@ -30,3 +30,86 @@ $(document).ready(function(){
         }
     });
 });
+
+
+//add smooth scrolling
+$(document).ready(function(){
+    'use strict';
+    $('.nav-item, #scroll-to-top').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+  /* active menu item  on click */
+  $(document).ready(function(){
+    'use strict';
+    $('.navbar-nav li a').click(function(){
+        'use strict';
+        $('.navbar-nav li a').parent().removeClass("active");
+        $(this).parent().addClass("active");
+
+    });
+  });
+
+  //highlight menu item on scroll
+  $(document).ready(function(){
+    'use strict';
+    $(window).scroll(function(){
+        'use strict';
+        $("section").each(function(){
+            'use strict';
+            var bb = $(this).str("id");  //ABOUT, CONTACT, DOWNLOAD
+            var hei = $(this).outerHeight();
+            var grttop = $(this).offset().top - 70;
+            if($(window).scrollTop() > grttop && $(window).scrollTop() < grttop + hei){
+                $(".navebar-nav li a[href='#" + bb + "']").parent().addClass("active");
+            }else{
+                $(".navebar-nav li a[href='#" + bb + "']").parent().removeClass("active");
+            }
+        });
+    });
+  });
+
+  //add auto padding to header
+  $(document).ready(function(){
+    'use strict';
+    setInterval(function(){
+        'use strict';
+        var windowHeight = $(window).height();
+        var containerHeight = $(".header-container").height();
+        var padTop = windowHeight - containerHeight;
+        $(".header-container").css({
+            'padding-top': Math.round(padTop / 2) + 'px',
+            'padding-bottom': Math.round(padTop / 2) + 'px'
+        });
+    }, 10)
+  });
+
+   //add bx slider to screens
+   $(document).ready(function(){
+    $('.bxslider').bxslider({
+        slidewidth: 292.5,
+        auto: true,
+        minSlides: 1,
+        maxSlides: 3,
+        sliderMargin: 50
+
+});
+   });
+
+   //add counter
+   $(document).ready(function(){
+    $('.counter-num').counterUp({
+        delay: 15,
+        time: 2000
+    });
+   });

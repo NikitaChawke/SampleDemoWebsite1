@@ -18,9 +18,11 @@
 		<!------ favicon ---->
 		<link rel="icon" type="image/png" href="images/downarrow.png">
 		
-		
+		<!------- Add wow animation js ----->
+		<script src="js/wow.min.js"></script>
 		<!---- CSS ---->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		
 
 		<!----- fontawesome ----->
 		<link rel="stylesheet" href="css/fontawesome.min.css">
@@ -31,6 +33,13 @@
 		<link rel="stylesheet" href="css/fontawesome.min.css">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+		<!------ BX slider Css---->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+
+		<!------ WOW Animation css -------->
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		
 		</head>
 		<body>
 
@@ -65,7 +74,7 @@
 				</nav>
 
 
-				<div class="header-overlay">
+				<div class="header-overlay header-container">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
@@ -115,7 +124,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
-								<div class="about-iphone">
+								<div class="about-iphone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
 									<img src="images/about-us-img.png">
 								</div>
 							</div>
@@ -287,7 +296,7 @@
 					</div>
 				</div>
 			</section>
-			<!----------- SCREENS -------------->	
+			<!----------- SCREENS
 			<section class="screen" id="SCREENS">
 				<div class="container">
 					<div class="row">
@@ -299,24 +308,17 @@
 						</div>
 					</div>
 				</div>
-				<div class="screen-slider">
-					<div class="carousel">
-						<div class="item">
-							<img src="images/screen1.png" width="60" height="60" alt="screen">
-						</div>
-						<div class="item">
-							<img src="images/screen2.png" width="60" height="60" alt="screen">
-						</div>
-						<div class="item">
-							<img src="images/screen3.jpg" width="60" height="60" alt="screen">
-						</div>
-						<div class="item">
-							<img src="images/screen4.jpg" width="60" height="60" alt="screen">
-						</div>
-					</div>
-
+				<div>
+					
+							<ul class="bxslider">
+								<li><img src="images/1.jpg" /></li>
+								<li><img src="images/2.jpg" /></li>
+								<li><img src="images/3.jpg" /></li>
+								<li><img src="images/4.jpg" /></li>
+							  </ul>
+						
 				</div>
-			</section>	
+			</section>	 -------------->	
 			<!----------- Counters -------------->
 			<section class="counter">
 				<div class="counter-overlay">
@@ -475,7 +477,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="scroll-top">
-								<a href="#"><i class="fa fa-angle-up"></i></a>
+								<a href="#HOME" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
 							</div>
 						</div>
 					</div>
@@ -485,7 +487,22 @@
 			<script src="js/jquery.js"></script>
 			<script src="js/bootstrap.min.js"></script>
 
+			<!---- Bx slider js ----->
+			<!--<script src="js/jquery.bxslider.js"></script>-->
+			<script>
+				$(document).ready(function(){
+				$('.bxslider').bxSlider();
+			  });
+			</script>
+  			
+			<!------- Add Js Counters Lib ------->
+			<script src="js/jquery.waypoints.min.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			
+			
+
 			<script src="js/custom.js"></script>
+			
 			
 		</body>
 		
